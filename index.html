@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app> 
+    <head>
+    <title>Bem Vindo ao Electron</title>
+    <script src="node_modules/angular/angular.min.js"></script>
+    </head>
+    <body> 
+        <h1>Hello World!</h1> 
+        We are using Electron: 
+        <script> 
+            document.write(process.versions['electron']) 
+        </script> 
+        on
+        <script> 
+            document.write(process.platform) 
+        </script> 
+        <script type="text/javascript"> 
+            var fs = require('fs'); 
+            var file = fs.readFileSync('angularelectron/package.json'); 
+            document.write(file); 
+        </script> 
+    </body> 
+</html>
